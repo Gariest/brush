@@ -5,7 +5,7 @@ now = datetime.now().time()
 
 print("now =", now)
 img = cv2.imread('img.jpg')
-mask = cv2.imread('mask_inverse.png')
+mask = cv2.imread('mask.png')
 img_og = cv2.cvtColor(img, cv2.COLOR_RGB2Lab)
 mask_og = cv2.cvtColor(mask, cv2.COLOR_RGBA2GRAY)
 dst = img_og.copy()
